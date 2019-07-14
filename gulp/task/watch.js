@@ -6,7 +6,7 @@ module.exports = function() {
             $.watch(["./src/img/**/*.{jpg,jpeg,png,gif}", "!./src/img/icons/svg/*.svg", "!./src/img/favicons/*.{jpg,jpeg,png,gif}"], $.gulp.series("images"));
             $.watch("./src/img/icons/svg/*.svg", $.gulp.series("iconfont"));
             $.watch("./src/fonts/**/*.*", $.gulp.series("transfer"));
-            $.watch("./src/index.html", $.gulp.series("html2pug"));
+            //$.watch("./src/index.html", $.gulp.series("html2pug"));
             $.watch("./src/js/**/*.js", $.gulp.series("scripts"));
             
             res();
